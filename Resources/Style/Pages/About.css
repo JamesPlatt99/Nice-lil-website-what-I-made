@@ -1,0 +1,12 @@
+#SubHeading{
+    font-size:13.5pt;
+    font-style: oblique;
+}
+#Left{
+    float: left;
+    overflow: hidden;
+}
+#Right{
+    margin-left:275px;
+    overflow: hidden;
+}
