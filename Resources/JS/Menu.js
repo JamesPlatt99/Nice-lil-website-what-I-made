@@ -6,19 +6,13 @@ $(document).ready(function(){
     $("#About").hide();
     $("#GreatWebsites").hide();
     
-    $("#HomeLink").click(function(){
-        $("#About").hide();
-        $("#GreatWebsites").hide();
-        $("#Home").show();
-    });        
-    $("#AboutLink").click(function(){
-        $("#Home").hide();
-        $("#GreatWebsites").hide();
-        $("#About").show();
-    });
-    $("#GreatWebsitesLink").click(function(){
-        $("#Home").hide();
-        $("#About").hide();
-        $("#GreatWebsites").show();
-    });
 });
+ function loadPage(pageToLoad) {
+    $("#Home").hide();
+    $("#About").hide();
+    $("#GreatWebsites").hide();
+    
+    $("#" + pageToLoad).show();    
+    //False return prevents page refresh
+    return false;
+ }
