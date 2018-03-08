@@ -1,10 +1,20 @@
 <html>
     <head>
         <title>lovely lil website</title>
+
         <link rel="stylesheet" type="text/css" href="Resources/Main.css">
         <link rel="stylesheet" type="text/css" href="Resources/Header.css">
         <link rel="stylesheet" type="text/css" href="Resources/Menu.css">
         <link rel="stylesheet" type="text/css" href="Resources/Content.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="jquery.js"></script> 
+        <script src="Resources/JS/Menu.js"></script>
+        <script> 
+                $(function(){
+                  $("#Home").load("Pages/Home.html"); 
+                });
+                </script> 
     </head>
     <body>
         <div id="Header">
@@ -22,16 +32,19 @@
         </div>
 
         <div id="Menu">
-                <ul>
-                    <li><a href="" > Home</a></li>
-                    <li><a href="" > About</a></li>
-                    <li><a href="" > Gr8 website</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="" id="HomeLink"> Home</a></li>
+                <li><a href="" id="AboutLink"> About</a></li>
+                <li><a href="" id="GreatWebsitesLink"> Gr8 websites</a></li>
+            </ul>
+        </div>
 
         <div id="Content">
-            
+            <div id="Home"></div>
+            <div id="About"></div>
+            <div id="GreatWebsites"></div>            
         </div>
+
     </body>
     <footer>
         <div id="footer">
