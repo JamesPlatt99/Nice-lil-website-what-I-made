@@ -7,12 +7,13 @@ $(document).ready(function(){
     $("#GreatWebsites").hide();
     
 });
- function loadPage(pageToLoad) {
-    $("#Home").hide();
-    $("#About").hide();
-    $("#GreatWebsites").hide();
-    
-    $("#" + pageToLoad).show();    
-    //False return prevents page refresh
-    return false;
- }
+var curPage = "Home";
+function loadPage(pageToLoad) {    
+    if(pageToLoad != curPage){
+        $("#" + pageToLoad).slideDown();
+        $("#" + curPage).hide();   
+    }
+    curPage = pageToLoad;
+   //False return prevents page refresh
+   return false;
+}
