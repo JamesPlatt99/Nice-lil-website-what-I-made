@@ -1,11 +1,7 @@
-var curPage = "Home";
-function loadPage(pageToLoad) {    
-    if(!document.getElementById(pageToLoad)){
-        pageToLoad = "Home";
-    }
+var curPage;
+function loadPage(pageToLoad) {
     if(pageToLoad != curPage){
-        $("#" + pageToLoad).slideDown();
-        $("#" + curPage).hide();   
+        $("#Content").load("Pages/" + pageToLoad + ".html");   
     }
     curPage = pageToLoad;
 }

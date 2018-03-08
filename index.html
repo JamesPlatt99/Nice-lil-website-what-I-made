@@ -18,9 +18,13 @@
         <div id="Menu">Error loading page (Menu)</div>
 
         <div id="Content">
-            <div id="Home">Error loading page (Home)</div>
+            <p id="error"></p>
+            <script> 
+                document.getElementById("error").innerHTML = "Could not load content for page (" + curPage + ").";
+            </script>
+            <!-- <div id="Home">Error loading page (Home)</div>
             <div id="About">Error loading page (About)</div>
-            <div id="GreatWebsites">Error loading page (Gr8 websites)</div>            
+            <div id="GreatWebsites">Error loading page (Gr8 websites)</div>             -->
         </div>
 
     </body>

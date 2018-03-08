@@ -1,16 +1,11 @@
-$(document).ready(function(){   
-    $('#Content').animate({'right':'0px'}, 1500);
-    
+$(document).ready(function(){      
     $("#Header").load("Resources/Elements/Header.html"); 
     $("#Menu").load("Resources/Elements/Menu.html"); 
- 
-    $("#Home").load("Pages/Home.html"); 
-    $("#About").load("Pages/About.html"); 
-    $("#GreatWebsites").load("Pages/GreatWebsites.html"); 
-    
-    $("#About").hide();
-    $("#GreatWebsites").hide();
-    var page = getUrlParameter('page') ? getUrlParameter('page') : 'Home';
+
+    var page = getUrlParameter('page')
+    if(page === null){
+        page = "Home";
+    }
     loadPage(page);
 });
 
