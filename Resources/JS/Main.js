@@ -14,14 +14,14 @@ $(document).ready(function(){
     loadPage(page);
 });
 
-function getUrlParameter(sParam) {
+function getUrlParameter(param) {
     var parameters = decodeURIComponent(window.location.search.substring(1)).split('&');
-    var parameterName;
+    var curParameter;
 
     for (var i = 0; i < parameters.length; i++) {
-        parameterName = parameters[i].split('=');
-        if (parameterName[0] === sParam && parameterName.length == 2) {
-            return parameterName[1];
+        curParameter = parameters[i].split('=');
+        if (curParameter[0] == param && curParameter.length > 1) {
+            return curParameter[1];
         }
     }
     return null;
