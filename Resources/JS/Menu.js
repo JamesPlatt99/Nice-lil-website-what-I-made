@@ -1,7 +1,7 @@
 $(document).ready(function(){   
-    $("#Home").load("../../Pages/Home.html"); 
-    $("#About").load("../../Pages/About.html"); 
-    $("#GreatWebsites").load("../../Pages/GreatWebsites.html"); 
+    $("#Home").load("Pages/Home.html"); 
+    $("#About").load("Pages/About.html"); 
+    $("#GreatWebsites").load("Pages/GreatWebsites.html"); 
 
     $("#About").hide();
     $("#GreatWebsites").hide();
