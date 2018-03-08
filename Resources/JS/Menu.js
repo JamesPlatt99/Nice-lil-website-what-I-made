@@ -1,8 +1,8 @@
-$(document).ready(function(){
-    $("#Home").load("Pages/Home.html"); 
-    $("#About").load("Pages/About.html"); 
-    $("#GreatWebsites").load("Pages/GreatWebsites.html"); 
-    
+$(document).ready(function(){   
+    $("#Home").load("../../Pages/Home.html"); 
+    $("#About").load("../../Pages/About.html"); 
+    $("#GreatWebsites").load("../../Pages/GreatWebsites.html"); 
+
     $("#About").hide();
     $("#GreatWebsites").hide();
 
