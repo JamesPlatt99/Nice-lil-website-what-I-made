@@ -5,21 +5,20 @@ $(document).ready(function(){
 
     $("#About").hide();
     $("#GreatWebsites").hide();
-
+    
     $("#HomeLink").click(function(){
-        $("#About").slideUp();
-        $("#GreatWebsites").slideUp();
-        $("#Home").slideDown();
-    })        
+        $("#About").hide();
+        $("#GreatWebsites").hide();
+        $("#Home").show();
+    });        
     $("#AboutLink").click(function(){
-        $("#Home").slideUp();
-        $("#GreatWebsites").slideUp();
-        $("#About").slideDown();
-    })   
-
+        $("#Home").hide();
+        $("#GreatWebsites").hide();
+        $("#About").show();
+    });
     $("#GreatWebsitesLink").click(function(){
-        $("#Home").slideUp();
-        $("#About").slideUp();
-        $("#GreatWebsites").slideDown();
-    })    
+        $("#Home").hide();
+        $("#About").hide();
+        $("#GreatWebsites").show();
+    });
 });
